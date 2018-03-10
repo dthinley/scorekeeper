@@ -1,1 +1,16 @@
+h1{
+	text-align: center;
+	color: green;
+}
 
+.container{
+	width: 50%;
+	margin: auto;
+	border: 1px solid green;
+	padding: 20px;
+	background: lightgrey;
+}
+
+.winner{
+	color: green;
+}
