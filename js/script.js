@@ -1,3 +1,5 @@
+//List of Variable
+
 var p1Button = document.querySelector("#p1");
 var p2Button = document.getElementById("p2");
 var resetButton = document.getElementById("reset")
@@ -11,6 +13,7 @@ var p2Score =0;
 var gameOver = false;
 var winningScore =5;
 
+//add evenListner for p1(player 1)
 p1Button.addEventListener("click", function(){
 	if(!gameOver){
 		p1Score++;
@@ -21,7 +24,7 @@ p1Button.addEventListener("click", function(){
 	p1Display.textContent = p1Score;
 	}
 });
-
+//add evenListner for p1(player 2)
 p2Button.addEventListener("click", function(){
 	if(!gameOver){
 		p2Score++;
@@ -33,6 +36,7 @@ p2Button.addEventListener("click", function(){
 	}
 });
 
+//add evenListner for reset button
 resetButton.addEventListener("click", function(){
 	reset();
 	
