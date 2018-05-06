@@ -1,39 +1,35 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Score Keeper Apps</title>
-	<!-- Latest compiled and minified CSS -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-
-	<!-- jQuery library -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
-	<!-- Latest compiled JavaScript -->
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-</head>
-<body>
-	<header>
-
-<h1>Score Keeper</h1>
-</header>
-<div class="row">
-<div class = "container">
-
-
-	<h2 class="text-center"> <span id="p1Display">0</span> to <span id ="p2Display">0</h2>
-	<p>Playing to:<span>5</span></p>
-	<div class="col-md-6">
-	<input type="number" name="score">
-	<button id="p1">Player One</button>
-</div>
-<div class="col-md-6">
-
-	<button id="p2">Player Two</button>
-	<button id ="reset">Reset</button>
-	</div>
-</div>
-</div>
-<script type="text/javascript" src = "js/main.js"></script>
-</body>
+   <head>
+      <title>Score Keeper Apps</title>
+      <!-- Latest compiled and minified CSS -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <!-- Google Font -->
+      <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+      <!-- custom style -->
+      <link rel="stylesheet" type="text/css" href="css/style.css">
+   </head>
+   <body>
+      <header>
+         <h1>Score Keeper</h1>
+      </header>
+      <div class = "container">
+         <p class="text-center">Playing to: <span> 0</span></p>
+         <input type="number" name="score"></input>
+         <div class="row">
+            <div class="col-md-6 col-xs-6">
+               <h2><span id="p1Display">0</span> </h2>
+               <button id="p1" class="btn btn-primary">Player One</button>
+            </div>
+            <div class="col-md-6 col-xs-6">
+               <h2><span id ="p2Display">0</h2>
+               <button id="p2" class="btn btn-primary">Player Two</button>
+            </div>
+            <div col-md-12>
+               <button id ="reset" class="btn btn-danger">Reset</button>
+            </div>
+         </div>
+      </div>
+      <script type="text/javascript" src = "js/main.js"></script>
+   </body>
 </html>
